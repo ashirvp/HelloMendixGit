@@ -3233,3 +3233,11 @@ COMMIT
 /*C3*/DELETE FROM "system$xasinstance" WHERE "id"=13792273858822332
 INSERT INTO "system$xasinstance" VALUES(13792273858822332,'fd8fa5ea-0ecd-4fa9-9436-935c41dcb0f9','2025-04-19 21:04:24.297000',NULL,NULL,NULL,'2025-04-19 19:16:48.518000')
 COMMIT
+DELETE FROM "system$queuedtask" WHERE "id"=14355223812276747
+INSERT INTO "system$queuedtask" VALUES(14355223812276747,260,'Running','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupUnreferencedFiles','[]','fd8fa5ea-0ecd-4fa9-9436-935c41dcb0f9',60,'2025-04-19 21:03:30.442000','2025-04-19 21:04:41.502000','2025-04-19 21:04:42.196000',0,NULL,'ClusterManagement-CleanupUnreferencedFiles',NULL)
+COMMIT
+ALTER SEQUENCE PUBLIC."system$queuedtask_sequence_mxseq" RESTART WITH 275
+INSERT INTO "system$queuedtask" VALUES(14355223812278553,274,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupUnreferencedFiles','[]',NULL,NULL,'2025-04-19 21:04:42.204000','2025-04-19 21:09:41.502000',NULL,0,NULL,'ClusterManagement-CleanupUnreferencedFiles',NULL)
+INSERT INTO "system$processedqueuetask" VALUES(13229323905434446,260,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupUnreferencedFiles','[]','fd8fa5ea-0ecd-4fa9-9436-935c41dcb0f9',60,'2025-04-19 21:03:30.442000','2025-04-19 21:04:41.502000','2025-04-19 21:04:42.196000','2025-04-19 21:04:42.209000',13,0,NULL,'ClusterManagement-CleanupUnreferencedFiles',NULL)
+DELETE FROM "system$queuedtask" WHERE "id"=14355223812276747
+COMMIT
